@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 
-{% block content %}
-   <h1>{{article_title}}</h1>
-  {{ article_date }}<br>
-  {{ article_content }}
 
+
+{% block content %}
+   <div class="post">
+       <h1 class="post-title">{{article_title}}</h1>
+       <span class="post-date">{{ article_date }}</span>
+       {{ article_content }}
+   </div>
 {% endblock %}
