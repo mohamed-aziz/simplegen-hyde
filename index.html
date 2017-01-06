@@ -13,7 +13,7 @@
       </a>
     </h1>
 
-    <span class="post-date">{{ article.date  }}</span>
+    <span class="post-date">{{ article.date.strftime('%A, %B %Y at %H:%M')  }}</span>
 
     {{ article.html }}
   </div>
