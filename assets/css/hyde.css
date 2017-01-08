@@ -31,9 +31,25 @@
  * Update the foundational and global aspects of the page.
  */
 
+
+
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
+
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
 @media (min-width: 48em) {
   html {
     font-size: 16px;
