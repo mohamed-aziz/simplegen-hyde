@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title%}
+    Tags list
+{% endblock %}
+
+{% block content %}
+    {% for key in tags.keys() %}
+	<h2>{{ key }}</h2>
+	<ul>
+	{% for article in tags[key]  %}
+	    <li><a href="{{ article.url }}.html">{{ article.title }}</a></li>
+	{% endfor %}
+	</ul>
+    {% endfor %}
+{% endblock %}
