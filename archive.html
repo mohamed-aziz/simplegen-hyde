@@ -3,7 +3,9 @@
 {% block content %}
     <div class="posts">
         {% for article in articles %}
-            <a href="{{ article.url}}">{{ article.title}}</a>
+            <div class="archive_post">
+                <a href="{{ article.url}}.html"> {{'0x%0.5X' | format(articles | length - loop.index)}} - {{ article.title}}</a>
+            </div>
         {% endfor %}
     </div>
 {% endblock %}
