@@ -4,9 +4,9 @@
 
 {% block content %}
    <div class="post">
-       <h1 class="post-title">{{article_title}}</h1>
-       <span class="post-date">{{ article_date.strftime('%d %B %Y, a calm %A at %H:%M') }}</span>
-       {{ article_content }}
+       <h1 class="post-title">{{article.title}}</h1>
+       <span class="post-date">{{ article.date.strftime('%d %B %Y, a calm %A at %H:%M') }}</span>
+       {{ article.html }}
    </div>
 
    <div id="disqus_thread"></div>
@@ -29,5 +29,5 @@
      })();
    </script>
    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-   
+
 {% endblock %}
